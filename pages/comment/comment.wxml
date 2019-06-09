@@ -1,0 +1,49 @@
+<!-- <scroll-view scroll-y="true"> -->
+
+<view class="page" style="min-height:{{ phoneHeight}}px">
+<view class='discuss_detail'>
+          <image class='discuss_avatar' src='{{avatarUrl}}'></image>
+          <text style='margin-left:5px;color:#195d76'>{{nickName}}</text>
+          <text style='margin-left:10px'>{{created_at}}</text>
+          <image  style='height:50rpx;width:50rpx;margin-left:80rpx' src="/icons/collect{{isSelected?'_hl':''}}.png" bindtap='addToCollected'></image>
+</view>
+<view class='discuss_content'>{{text}}</view>
+
+<scroll-view scroll-y="false" class="gallery">
+    <view class="item" wx:for="{{imagesList}}"  wx:key="">
+        <image src="{{item.path}}" data-src="{{item.path}}" bindtap="previewImage" mode="aspectFill" />        
+    </view>
+</scroll-view>
+
+<view class='separte'><text style='margin-left: 10rpx;'>最新评论</text></view>   <!--分隔符->    
+    <!-- 评论列表 -->
+    
+  <view class='replyList' wx:for="{{reply_list}}">
+    <view class='discuss_detail'>
+          <image class='discuss_avatar' src='{{item.avatarUrl}}'></image>
+          <text style='margin-left:5px;color:#195d76'>{{item.nickName}}</text>
+          <text style='margin-left:10px'>{{item.created_at}}</text>
+    </view>
+    <view class='discuss_content'>{{item.comment}}</view>
+    <view class='line'></view>
+  </view>
+  <!-- </scroll-view> -->
+
+
+
+
+<!-- 评论输入框 -->
+    <form bindsubmit="submitComment" report-submit="true">
+  <view class="release">
+    <!-- <view  wx:if="{{reply}}" class="replyinfo1">
+      回复<text class="text">{{replyUserName}}</text>
+      <button class="cancel" bindtap="cancleReply">取消回复</button>
+    </view> -->
+    <view class="replyinfo2">
+      <textarea placeholder-class="input_null" fixed="true" maxlength="-1" show-confirm-bar="false" cursor-spacing="15" auto-height="true" placeholder="请输入回复" name="comment" value='{{comment}}'></textarea>
+      <button form-type="submit" class="submit">发送</button>
+    </view>
+  </view>
+</form>
+
+</view>

@@ -1,0 +1,11 @@
+<!--pages/welcome/welcome.wxml-->
+<view class='background'>
+<image src='https://cloud-minapp-26291.cloud.ifanrusercontent.com/1hR5bMIJOuDSsUeF.jpg'></image>
+</view>
+<view class='zhuti'>
+<!-- <view class='avatar'><open-data type="userAvatarUrl"></open-data>
+</view> -->
+<view class='btn'> 
+<button class='btnColor'  wx:if="{{canIUse}}" hover-class='click' hover-stay-time='100' loading='{{showLoading}}' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">开启旅途</button>
+</view>
+</view>

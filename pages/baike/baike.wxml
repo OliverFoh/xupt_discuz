@@ -1,0 +1,128 @@
+<view class='baike'>
+<!-- problem -->
+<view class='content'>
+
+<view class='item-1' id='0' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont icon-wifi"></icon>
+<view class='zhuti'>
+<text>校园网</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class='item-1' id='1' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont icon-chongzhijiaofei"></icon>
+<view class='zhuti'>
+<text>校园缴费</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class='item-1' id='2' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont icon-zhuanyemingcheng"></icon>
+<view class='zhuti'>
+<text>图书借阅</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class='item-1' id='3' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont icon-zhiyuanbiao"></icon>
+<view class='zhuti'>
+<text>志愿填报</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class='item-1' id='4' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont icon-xingquzhoubian"></icon>
+<view class='zhuti'>
+<text>学校周边</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class='item-1' id='5' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont icon-shetuan"></icon>
+<view class='zhuti'>
+<text>生活设施</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class='item-1' id='6' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont icon-icon_addressbook"></icon>
+<view class='zhuti'>
+<text>常用电话</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class='item-1' id='7' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont .icon-guojiajiangxuejin"></icon>
+<view class='zhuti'>
+<text>奖助学金</text>
+</view>
+</view>
+</navigator>
+</view>
+
+<view class='item-1' id='8' bindtap='toDetailPage'>
+<navigator url='/pacakge_baike/schoolNet/schoolNet' hover-class='none'>
+<view class='tubiao-img'>
+<icon class="iconfont icon-zhanghaoquanxianguanli"></icon>
+<view class='zhuti'>
+<text>一卡通</text>
+</view>
+</view>
+</navigator>
+</view>
+
+</view>
+<!-- search -->
+<view class='search'>
+<input type='text' placeholder='例：一卡通问题' ></input>
+<view class='search-img'>
+<icon class="iconfont icon-icon_search"></icon>
+</view>
+</view>
+<view class='beijin-img'>
+</view>
+</view>
+
+
+<!-- <i-grid>
+    <i-grid-item>
+        <i-grid-icon>
+            <image src="/icons/me_hl.png" />
+        </i-grid-icon>
+        <i-grid-label>Grid</i-grid-label>
+    </i-grid-item>
+    <i-grid-item>Grid</i-grid-item>
+    <i-grid-item>Grid</i-grid-item>
+</i-grid> -->
+
+

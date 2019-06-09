@@ -1,0 +1,142 @@
+<!-- 悬浮按钮 -->
+<wux-fab-button   buttons="{{ buttons }}" theme="positive" backdrop="true" bind:click="onClick" />
+
+<view class="youhui" >
+  <view class="{{_num==0?'active':''}}" data-index='0' bindtap='toggle'>
+    最新
+  </view>
+  <view class="{{_num==1?'active':''}}" data-index='1' bindtap='toggle'>
+    热度
+  </view>
+  <!-- <view class="{{_num==2?'active':''}}" data-index='2' bindtap='toggle'>
+    其他
+  </view> -->
+</view>
+
+
+
+<swiper current="{{_num}}" class="swiper-box" bindchange="swapClass" duration="200" style="height:{{clientHeight?clientHeight+'px':'auto'}}" >
+  <!-- 未使用 -->
+  <swiper-item>
+  <!-- <scroll-view scroll-y="true" bindscrolltoupper="refresh" style="height:{{clientHeight?clientHeight+'px':'auto'}}"> -->
+    <view id='test'>
+    <view class='card' wx:for="{{Post}}" wx:for-index='singleIndex' wx:key='id'>
+      <!-- <view data-index='{{singleIndex}}'> -->
+        <view class='discuss_detail' >
+          <image class='discuss_avatar' src='{{item.avatarUrl}}'></image>
+          <text style='margin-left:5px;color:#195d76'>{{item.nickName}}</text>
+          <text style='margin-left:10px'>{{item.created_at}}</text>
+        </view>
+        <view class='discuss_content' >{{item.text}}</view>
+
+        <scroll-view scroll-y="false" class="gallery">
+        <view class="item" wx:for="{{item.imagesIdList}}"  wx:key="">
+            <image src="{{item.path}}" data-src="{{item.path}}" bindtap="previewImage" mode="aspectFill" />        
+        </view>
+        </scroll-view>
+            
+         <!-- 标签 -->
+          <view class='tag_view'>
+            <view hidden="{{item.tags[0]===0?true:false}}">
+              <wux-tag color='purple'>学习</wux-tag>
+            </view>
+            <view hidden="{{item.tags[1]===0?true:false}}">
+              <wux-tag color='purple'>生活</wux-tag>
+            </view>
+            <view hidden="{{item.tags[2]===0?true:false}}">
+              <wux-tag color='purple'>娱乐</wux-tag>
+            </view>
+            <view hidden="{{item.tags[3]===0?true:false}}">
+              <wux-tag color='purple'>其他</wux-tag>
+            </view>
+          </view>
+          <!-- 单个帖子底部footer -->
+        <view class='footerBox'>
+          <view style='display:flex;align-items:center'>
+            <image data-id='{{singleIndex}}'  bindtap='showFavor' style='width:35rpx;height:35rpx;margin-bottom:10rpx' src="/icons/favor{{liked[singleIndex]?'_hl':''}}.png"/>
+            <text style='color:gray;margin-left:2rpx;font-size:12px'>{{item.like_num}}</text>
+      </view>
+  
+    <view style='display:flex;align-items:center'>
+            <image bindtap='toCommentPage' data-id='{{singleIndex}}' style='width:35rpx;height:35rpx;margin-left:10rpx' src='/icons/comment.png'/>
+            <text style='color:gray;margin-left:2rpx;font-size:12px'>{{item.reply_num}}</text>
+      </view>
+      <view style='display:flex;align-items:center'>
+            <image bindtap='reportIssue' style='width:35rpx;height:35rpx;margin-left:10rpx' src='/icons/report.png'/>
+          <text style='color:gray;margin-left:2rpx;font-size:12px'>举报</text>
+        </view>
+          </view>
+         
+          <view class='line'></view>
+      
+    <!-- </view>     -->
+  </view>
+     </view>   
+    <!-- </scroll-view> -->
+  </swiper-item>
+  
+  
+  
+  
+  <!-- 已使用 -->
+  <swiper-item>
+        <view id='test'>
+    <view class='card' wx:for="{{Post}}" wx:for-index='singleIndex' wx:key='id'>
+      <!-- <view data-index='{{singleIndex}}'> -->
+        <view class='discuss_detail' bindtap='toCommentPage'>
+          <image class='discuss_avatar' src='{{item.avatarUrl}}'></image>
+          <text style='margin-left:5px;color:#195d76'>{{item.nickName}}</text>
+          <text style='margin-left:10px'>{{item.created_at}}</text>
+        </view>
+        <view class='discuss_content' bindtap='toCommentPage'>{{item.text}}</view>
+
+        <scroll-view scroll-y="false" class="gallery">
+        <view class="item" wx:for="{{item.imagesIdList}}"  wx:key="">
+            <image src="{{item.path}}" data-src="{{item.path}}" bindtap="previewImage" mode="aspectFill" />        
+        </view>
+        </scroll-view>
+            
+         <!-- 标签 -->
+          <view class='tag_view'>
+            <view hidden="{{item.tags[0]===0?true:false}}">
+              <wux-tag color='purple'>学习</wux-tag>
+            </view>
+            <view hidden="{{item.tags[1]===0?true:false}}">
+              <wux-tag color='purple'>生活</wux-tag>
+            </view>
+            <view hidden="{{item.tags[2]===0?true:false}}">
+              <wux-tag color='purple'>娱乐</wux-tag>
+            </view>
+            <view hidden="{{item.tags[3]===0?true:false}}">
+              <wux-tag color='purple'>其他</wux-tag>
+            </view>
+          </view>
+          <!-- 单个帖子底部footer -->
+        <view class='footerBox'>
+          <view style='display:flex;align-items:center'>
+            <image data-id='{{singleIndex}}'  bindtap='showFavor' style='width:35rpx;height:35rpx;margin-bottom:10rpx' src="/icons/favor{{liked[singleIndex]?'_hl':''}}.png"/>
+            <text style='color:gray;margin-left:2rpx;font-size:12px'>{{item.like_num}}</text>
+      </view>
+  
+    <view style='display:flex;align-items:center'>
+            <image bindtap='toCommentPage' data-id='{{singleIndex}}' style='width:35rpx;height:35rpx;margin-left:10rpx' src='/icons/comment.png'/>
+            <text style='color:gray;margin-left:2rpx;font-size:12px'>{{item.reply_num}}</text>
+      </view>
+      <view style='display:flex;align-items:center'>
+            <image bindtap='reportIssue' style='width:35rpx;height:35rpx;margin-left:10rpx' src='/icons/report.png'/>
+          <text style='color:gray;margin-left:2rpx;font-size:12px'>举报</text>
+        </view>
+          </view>
+         
+          <view class='line'></view>
+      
+    <!-- </view>     -->
+  </view>
+     </view>   
+  </swiper-item>
+  <!-- 已过期 -->
+  <!-- <swiper-item>
+    
+  </swiper-item> -->
+</swiper>
+

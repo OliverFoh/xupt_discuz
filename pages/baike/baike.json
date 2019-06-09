@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "邮百科",
+  "usingComponents": {
+    "wux-icon": "/dist/icon/index",
+    "wux-grids": "/dist/grids/index",
+    "wux-grid": "/dist/grid/index",
+    "wux-fab-button": "/dist/fab-button/index"
+  
+  }
+}

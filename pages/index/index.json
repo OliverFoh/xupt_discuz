@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "wux-button": "/dist/button/index",
+    "wux-fab-button": "/dist/fab-button/index",
+    "wux-tag": "/dist/tag/index"
+  }
+}

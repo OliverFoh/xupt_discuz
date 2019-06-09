@@ -1,0 +1,135 @@
+/* pages/write/write.wxss */
+page{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+
+  
+}
+/* write{
+  position: relative;
+} */
+.wenzi{
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height:200px;
+  border: 1rpx solid black;
+
+}
+.tupian{
+  position: absolute;
+  top: 200px;
+  width:100%;
+  height: 30%;
+  border: 1rpx solid black; 
+  
+}
+.textarea {
+  font-size:16px;
+  /* margin: 10%; */
+  background-color: white;
+  width: 94%;
+  height: 32%;
+  padding: 0;
+  margin: 0;
+  left: 3%;
+  top: 3%;
+  position: absolute;
+ border-radius:2px;
+  /* border: 1px solid black; */
+}
+
+.placeholder {
+  font-size: 20rpx;
+  color: gray;
+}
+/* pages/index/index.wxss */
+/*画廊*/
+.gallery {   
+  position: absolute;
+  top:45%; 
+  width:100%;
+  height:30%;
+  /* margin: 25rpx auto; */
+  margin-left:25rpx;
+  margin-right: 25rpx; 
+  display: flex;    
+  justify-content: flex-start;    
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid lightgray; */
+
+}
+/*每张图片所占容器*/
+.item {    
+  position: relative;    
+  margin-left:25rpx;
+  width:200rpx;
+  height:200rpx;
+  display: inline-block;
+  /* border: 3px solid black; */
+  /* border: 1px solid white;*/
+
+}
+.item image{
+  width: 100%;
+  height: 100%;
+}
+.backPanel{
+  background-color: #c4c7c9;
+}
+/*add按钮*/
+.item .addIcon{
+  /* position:relativeab; */
+  position: absolute;
+  width:200rpx;
+  height:200rpx;
+  text-align:center;
+  line-height:200rpx;
+  font-size:80rpx;
+  background: #f2f2f2;
+  color: #555;
+}
+/*删除按钮*/
+.delete {    
+  position:absolute;
+  right:0;
+  top:0;
+  /* background:#ccc; */
+  opacity:1;
+  height: 36rpx;
+  font-size:22rpx;
+  font-weight:700;
+  padding:0 8rpx 0 10rpx;
+}
+/* .view{
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  height: 500rpx;
+} */
+.btn{
+  position: absolute;
+  top:80%;
+  margin-left:3%;
+  width:94%;
+  color: whitesmoke;
+  background-color: #558be9;
+}
+.loading{
+  position: absolute;
+  top: 30%;
+}
+.tag_view{
+  position:absolute;
+  display: flex;
+  /* justify-content:space-evenly; */
+  width: 100%;
+  margin-top:60%;
+  margin-left:50rpx;
+}
+.distance{
+  margin-left: 100rpx;
+}

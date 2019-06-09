@@ -1,0 +1,9 @@
+.saveButton{
+  margin-top:15%;
+  margin-left: 2%;
+  margin-right:2%;
+}
+.cascader{
+  display: inline-flex;
+  margin-left:150rpx;
+}

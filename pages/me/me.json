@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "个人中心",
+  "usingComponents": {
+    "wux-cell-group": "/dist/cell-group/index",
+    "wux-cell": "/dist/cell/index",
+    "wux-card": "/dist/card/index",
+    "wux-wing-blank": "/dist/wing-blank/index"
+  }
+}

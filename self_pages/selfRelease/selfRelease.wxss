@@ -1,0 +1,4 @@
+/* self_pages/selfRelease/selfRelease.wxss */
+.box{
+  margin-top: 20rpx;
+}

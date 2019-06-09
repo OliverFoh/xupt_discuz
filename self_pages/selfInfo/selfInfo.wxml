@@ -1,0 +1,43 @@
+<wux-cell-group title='个人信息'>
+<wux-cell hover-class="none">
+    <wux-input label="姓名"  value='{{name}}' bind:change='getName' controlled />
+</wux-cell>
+<wux-cell hover-class="none">
+    <wux-input label="学号"  value='{{account}}' bind:change='getAccount'  controlled />
+</wux-cell>
+<wux-cell bind:click='selectGender' hover-class="none">
+     <text>性别</text>
+  <view class='cascader'>
+ <view >{{gender}}</view>
+ </view>
+
+</wux-cell>
+<wux-cell hover-class="none" bind:click='showAcademyCascader'>
+  <text>学院</text>
+  <view class='cascader'>
+ <!-- <picker bindchange='bindPickerChange' value='{{index2}}' range='{{AcademyList}}'>
+ </picker> -->
+ <view >{{academy}}</view>
+ </view>
+</wux-cell>
+<wux-cell hover-class="none" bind:click='showAcademyCascader'>
+    <text>专业</text>
+  <view class='cascader'>
+   <view>{{major}}</view>
+ <!-- <picker bindchange='bindPickerChange' value='{{index3}}' range='{{MajorList}}'>
+ <view >{{MajorList[index3]}}</view>
+ </picker> -->
+ </view>
+</wux-cell>
+</wux-cell-group>
+<view class='saveButton'>
+<wux-button block hoverStayTime='100' type="positive" disabled='{{!canUse}}' bind:click='submit'>保存</wux-button>
+</view>
+<!-- 级联选择器 -->
+<!-- 学院专业 -->
+<wux-cascader visible="{{academyIsShow}}" default-value=""  title="所在学院与专业" options="{{list}}" bind:close="closeCascader" bind:change="onChangeAcademy" />
+
+
+
+
+

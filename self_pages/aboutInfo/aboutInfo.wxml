@@ -1,0 +1,14 @@
+<!--self_pages/aboutInfo/aboutInfo.wxml-->
+<!-- <view class='avatar' >
+<image  src='https://cloud-minapp-26291.cloud.ifanrusercontent.com/1hWPHeAfJUyrrpno.png'></image>
+
+</view> -->
+
+<view class='avatar'>
+<wux-avatar size="large" src="https://cloud-minapp-26291.cloud.ifanrusercontent.com/1hWPHeAfJUyrrpno.png" />
+</view>
+<view class='text'>
+<text style='color:gray;margin-top:50rpx'>让校园生活更加简单</text>
+<text style='margin-top:65%'>小猪木屋工作室</text>
+<text style='margin-top:20rpx'>邮箱:fsw3350@gmail.com</text>
+</view>

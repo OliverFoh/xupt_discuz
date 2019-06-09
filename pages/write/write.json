@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "wux-upload":"/dist/upload/index",
+    "wux-button":"/dist/button/index",
+    "wux-spin":"/dist/spin/index",
+    "wux-tag": "/dist/tag/index"
+  }
+}

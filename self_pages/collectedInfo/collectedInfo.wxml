@@ -1,0 +1,12 @@
+<view wx:for='{{collectedPost}}' wx:for-index='singleIndex' wx:key='index'>
+<view  class='box'>
+<wux-wing-blank size="default" >
+            <wux-card title="{{item.nickName}}" thumb="{{item.avatarUrl}}" extra="{{item.created_at}}">
+                <view slot="body">{{item.text}}{{singleIndex}}</view>
+                <view slot="footer" data-test='{{singleIndex}}'>
+                <!-- <button size='mini' type='primary' catchtap='deletePost'>删 除</button> -->
+                </view>
+            </wux-card>
+</wux-wing-blank>
+</view>
+</view>

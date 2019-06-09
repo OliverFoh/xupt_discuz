@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/baike/baike",
+    "pages/logs/logs",
+    "pages/write/write",
+    "pages/notice/notice",
+    "pages/me/me",
+    "self_pages/selfInfo/selfInfo",
+    "pacakge_baike/schoolNet/schoolNet",
+    "pages/comment/comment",
+    "pages/write_success/write_success",
+    "self_pages/notice_info/notice_info",
+    "self_pages/selfRelease/selfRelease",
+    "self_pages/collectedInfo/collectedInfo",
+    "self_pages/aboutInfo/aboutInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "邮我问",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#cdcdcd",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/icons/shouye.png",
+        "selectedIconPath": "/icons/shouye_hl.png"
+      },
+      {
+        "pagePath": "pages/baike/baike",
+        "text": "速查",
+        "iconPath": "/icons/baike.png",
+        "selectedIconPath": "/icons/baike_hl.png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "通知",
+        "iconPath": "icons/notice.png",
+        "selectedIconPath": "icons/notice_hl.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "icons/me.png",
+        "selectedIconPath": "icons/me_hl.png"
+      }
+    ]
+  },
+  "plugins": {
+    "sdkPlugin": {
+      "version": "2.0.9",
+      "provider": "wxc6b86e382a1e3294"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

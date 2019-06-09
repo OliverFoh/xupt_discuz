@@ -1,0 +1,127 @@
+
+.youhui{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-around;
+  background-color: #fff;
+  height:100rpx;
+  color: gray;
+  font-size: 32rpx;
+  border-top:1px solid #F0F0F0;
+  border-bottom:3px solid #F0F0F0;
+}
+
+.youhui>view{
+  display: flex;
+  align-items: center;
+}
+.active{
+  /* color: #DF2E26;
+  border-bottom:3px solid #DF2E26; */
+  color: black;
+  border-bottom:4px solid black; 
+
+}
+.discuss_avatar{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-left:10rpx;
+}
+.discuss_detail{
+  display: flex;
+  font-size: 12px;
+  height: 120rpx;
+  width: 100%;
+  align-items: center;
+  /*justify-content: space-between;*/
+
+}
+.discuss_content{
+ 
+  margin-left:100rpx;
+ white-space: pre-line;
+  overflow: hidden;
+  width: 80%;
+  padding-bottom:50rpx;
+  font-size: 16px;
+ 
+}
+.view_num{
+  padding-bottom:5px;
+ margin-left: 80%;
+ font-size: 12px;
+ color:gray;
+}
+.line {
+  width: 100%;
+  height: 2rpx;
+  background: rgb(216, 211, 211);
+}
+/* swiper-box{
+  width:100%;
+  height:auto;
+} */
+.card{
+  border:rgb(180, 76, 76);
+  margin: 2rpx;
+}
+.imagesBox{
+  display: flex;
+  margin-left: 100rpx;
+
+}
+
+
+
+
+
+
+
+.gallery {   
+  /* position: absolute; */
+  top: 38%; 
+  width:100%;
+  height: 37%;
+  margin: 0 auto;
+  display: flex;    
+  justify-content: flex-start;    
+  flex-wrap: wrap;
+  /* border-bottom: 1px solid lightgray; */
+
+}
+/*每张图片所占容器*/
+.item {    
+  /* position: relative;     */
+  margin-left:15rpx;
+  width:230rpx;
+  height:230rpx;
+  display: inline-block;
+  /* border: 3px solid black; */
+  /* border: 1px solid white;*/
+
+}
+.item image{
+  width: 100%;
+  height: 100%;
+}
+.backPanel{
+  background-color: #c4c7c9;
+}
+.footerBox{
+  display: flex;
+  margin-top: 30rpx;
+  margin-bottom:10rpx;
+  justify-content: space-around
+}
+.tag_view{
+  display: flex;
+  /* justify-content:space-evenly; */
+  width: 100%;
+  margin-top:10rpx;
+  margin-left: 20rpx;
+}
+
+
+

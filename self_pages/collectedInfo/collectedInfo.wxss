@@ -1,0 +1,4 @@
+/* self_pages/collectedInfo/collectedInfo.wxss */
+.box{
+  margin-top: 20rpx;
+}

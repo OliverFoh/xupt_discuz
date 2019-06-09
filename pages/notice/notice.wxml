@@ -1,0 +1,23 @@
+<!-- <view class='form_view' hover-class='click' bindtap='person_ifo'>
+<image style='width:70rpx;height:70rpx;margin-left:10rpx' src='/icons/systemInfo.png'/>
+<text style='margin-left:12px'>系统通知</text>
+<image style='width:30rpx;height:30rpx;margin-left:440rpx' src='/icons/arrow.png'/>
+</view>
+<view class='line'></view>
+<view class='form_view' hover-class='click' bindtap='person_ifo'>
+<image style='width:70rpx;height:70rpx;margin-left:10rpx' src='/icons/like.png'/>
+<text style='margin-left:12px'>点赞我的</text>
+<image style='width:30rpx;height:30rpx;margin-left:440rpx' src='/icons/arrow.png'/>
+</view>
+<view class='line'></view>
+<view class='form_view' hover-class='click' bindtap='person_ifo'>
+<image style='width:70rpx;height:70rpx;margin-left:10rpx' src='/icons/reply.png'/>
+<text style='margin-left:12px'>回复我的</text>
+<image style='width:30rpx;height:30rpx;margin-left:440rpx' src='/icons/arrow.png'/>
+</view>
+<view class='line'></view> -->
+ <wux-cell-group title="通知中心">
+            <wux-cell thumb="https://cloud-minapp-26291.cloud.ifanrusercontent.com/1hVz8Yz7kTqP0V73.png" title="系统通知" is-link url="/self_pages/notice_info/notice_info"></wux-cell>
+            <wux-cell thumb="https://cloud-minapp-26291.cloud.ifanrusercontent.com/1hVzD7kQ8vygfI9v.png" title="点赞我的" is-link url="/self_pages/notice_info/notice_info"></wux-cell>
+            <wux-cell thumb="https://cloud-minapp-26291.cloud.ifanrusercontent.com/1hVzDJVzPftKXcQ5.png" title="回复我的" is-link url="/self_pages/notice_info/notice_info"></wux-cell>
+</wux-cell-group>

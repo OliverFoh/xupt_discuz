@@ -1,0 +1,95 @@
+/* pages/baike/baike.wxss */
+@font-face {
+  font-family: 'iconfont';  /* project id 1158084 */
+  src: url('//at.alicdn.com/t/font_1158084_cf3kkb4gxw9.eot');
+  src: url('//at.alicdn.com/t/font_1158084_cf3kkb4gxw9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1158084_cf3kkb4gxw9.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1158084_cf3kkb4gxw9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1158084_cf3kkb4gxw9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1158084_cf3kkb4gxw9.svg#iconfont') format('svg');
+}
+.baike{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  /* background: lightgoldenrodyellow; */
+  /* border: 2px solid red; */
+}
+.content{
+  position: absolute;
+  top: 0%;
+  left: 5%;
+  width: 90%;
+  height: 50%;
+  /* border: 5px solid red; */
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+}
+.item-1{
+  /* position: absolute; */
+  /* border: 2px solid black; */
+}
+.tubiao-img{
+  /* position: absolute; */
+  /* position: relative; */
+  width: 80%;
+  height: 70%;
+  /* border: 5px solid lightblue; */
+  /* background: lightblue; */
+  margin: 10% auto;
+  text-align: center;
+  /* line-height: 0%; */
+  border-radius: 15px;
+}
+.zhuti{
+  text-align: center;
+}
+.zhuti text{
+  font-size: 100%;
+  font-family: cursive;
+  color:gray;
+  
+}
+.search{
+  position: absolute;
+  top: 52%;
+  width: 90%;
+  left: 5%;
+  height: 8%;
+  background: lightblue;
+  border-radius: 15px;
+}
+.search input{
+  position: absolute;
+  width: 78%;
+  height: 70%;
+  top: 15%;
+  left: 2%;
+  color: gray;
+  /* text-indent: 1em; */
+  
+  background:white;
+  /* border:1px solid black; */
+  border-radius: 10px;
+}
+.search-img{
+  position: absolute;
+  width: 15%;
+  height: 70%;
+  top: 8%;
+  right: 0%;
+  /* border: 1px solid black; */
+}
+/* .beijin-img{
+  position: absolute;
+  top: 62%;
+  width: 100%;
+  height: 35%;
+  border:5px solid red;
+  
+} */
+
+/* pages/baike/baike.wxss */
+

@@ -1,0 +1,8 @@
+<wux-result
+    title="发布成功"
+    label=""
+    buttons="{{ buttons }}"
+    extra=""
+    fixed
+    bind:click="onClick"
+/>

@@ -1,0 +1,9 @@
+<!--pacakge_baike/schoolNet/schoolNet.wxml-->
+
+<!-- <wxparser rich-text="{{richText}}" /> -->
+
+<rich-text nodes="{{richText}}"></rich-text>
+<view style='margin-bottom:50rpx'>
+
+<wux-button block clear bind:click="toWritePage" type="calm">未找到答案?,问圈友</wux-button>
+</view>
