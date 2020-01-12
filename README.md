@@ -13,11 +13,9 @@
 <center>欢迎页面</center>
 
 
-
 ![首页](https://i.loli.net/2020/01/12/GqsDvZVCmBcrNJH.png)
 
 <center>首页</center>
-
 
 
 ![信息发布页面](https://i.loli.net/2020/01/12/CV3lPw1mETcLFxu.png)
