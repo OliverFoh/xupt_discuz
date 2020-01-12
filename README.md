@@ -11,22 +11,23 @@
 ## 应用概览
 
 - 欢迎页
-![欢迎页](https://i.loli.net/2020/01/12/zvQwrlCUPE2kcGA.png)
 
+  ![欢迎页](https://i.loli.net/2020/01/12/zvQwrlCUPE2kcGA.png)
 - 首页
-![首页](https://i.loli.net/2020/01/12/GqsDvZVCmBcrNJH.png)
 
+  ![首页](https://i.loli.net/2020/01/12/GqsDvZVCmBcrNJH.png)
 - 信息发布页
-![信息发布页面](https://i.loli.net/2020/01/12/CV3lPw1mETcLFxu.png)
 
+  ![信息发布页面](https://i.loli.net/2020/01/12/CV3lPw1mETcLFxu.png)
 - 百科页
-![百科页面](https://i.loli.net/2020/01/12/K1YyZXpFqhTRG82.png)
 
+  ![百科页面](https://i.loli.net/2020/01/12/K1YyZXpFqhTRG82.png)
 - 通知页
-![通知页](https://i.loli.net/2020/01/12/YWTGVOaN9dbFLng.png)
 
+  ![通知页](https://i.loli.net/2020/01/12/YWTGVOaN9dbFLng.png)
 - 个人信息页
-![个人信息页面](https://i.loli.net/2020/01/12/eRASb4JZWI9rkfD.png)
+
+  ![个人信息页面](https://i.loli.net/2020/01/12/eRASb4JZWI9rkfD.png)
 
 ## 技术细节
 
